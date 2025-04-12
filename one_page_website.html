@@ -1,56 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>One Page Website</title>
-</head>
-<body>
-  <!-- Navigation Section -->
-  <nav>
-    <a href="#home">Home</a> |
-    <a href="#pictures">Pictures</a> |
-    <a href="#videos">Videos</a> |
-    <a href="#contact">Contact</a>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Page Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Section -->
+    <nav>
+      <a href="#home">Home</a> <a href="#pictures">Pictures</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <!-- Home Page Section -->
-  <section id="home">
-    <h1>Welcome to My One-Page Website</h1>
-    <p>This is a simple HTML website created to demonstrate various elements of web design.</p>
-  </section>
+    <!-- Home Page Section -->
+    <section id="home">
+      <h1>Welcome to My One-Page Website</h1>
+      <p>
+        This is a simple HTML website created to demonstrate various elements of
+        web design.
+      </p>
+    </section>
 
-  <!-- Pictures Section -->
-  <section id="pictures">
-    <h2>Picture Gallery</h2>
-    <img src="Pictures/image1.jpg.jpg" height="200">
-    <img src="Pictures/image2.png" height="200">
-    <img src="Pictures/image3.jpg" height="200">
-  </section>
+    <!-- Pictures Section -->
+    <section id="pictures">
+      <h2>Picture Gallery</h2>
+      <div class="lightbox">
+        <a href="Pictures/image1.jpg.jpg"
+          ><img src="Pictures/image1.jpg.jpg" height="200" alt="Image 1"
+        /></a>
+        <a href="Pictures/image2.png"
+          ><img src="Pictures/image2.png" height="200" alt="Image 2"
+        /></a>
+        <a href="Pictures/image3.jpg"
+          ><img src="Pictures/image3.jpg" height="200" alt="Image 3"
+        /></a>
+      </div>
+    </section>
 
-  <!-- Videos Section -->
-  <section id="videos">
-    <h2>Video Section</h2>
-    <iframe src="Video/videoplayback.mp4" title="Super Mario" muted width="560" height="315" allowfullscreen></iframe>
-  </section>
+    <!-- Videos Section -->
+    <section id="videos">
+      <h2>Video Section</h2>
+      <iframe
+        src="Video/videoplayback.mp4"
+        title="Super Mario"
+        muted
+        width="560"
+        height="315"
+        allowfullscreen
+      ></iframe>
+    </section>
 
-  <!-- Contact Form Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br><br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" required></textarea><br><br>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <!-- Contact Form Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea
+        ><br /><br />
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My One-Page Website. All rights reserved.</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 My One-Page Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
